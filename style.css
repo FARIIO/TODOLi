@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #00617a, #007f92, #009d9b, #00ba93, #08d57b);
+    min-height: 100vh;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 120px;
+    min-height: 15vh;
+    padding: 40px 10px 10px 10px;
+}
+
+span:hover {
+    color: transparent;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    cursor: pointer;
+    transition: all 0.6s linear;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    padding: 40px 10px 10px 10px;
+}
+
+.inp {
+    border-radius: 4px;
+}
+
+.inp:focus {
+    outline: none;
+}
+
+.add-btn {
+    margin: 0.2rem;
+    border-radius: 4px;
+}
+
+.inp,
+.add-btn {
+    background-color: #fff;
+    border: none;
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+.inp:hover,
+.add-btn:hover,
+.todo-item:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s ease;
+}
+
+form button {
+    color: #00617a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00617a;
+    color: #fff;
+}
+
+.todo-ul {
+    list-style: none;
+}
+
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-size: .6rem;
+    margin: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.todo-item {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.check-btn,
+.x-btn {
+    background-color: #fff;
+    border: none;
+    padding: 0.2rem;
+    color: #00617a;
+    cursor: pointer;
+    font-size: .7rem;
+    border-radius: 5px;
+    flex-shrink: 1;
+    transition: all 0.4s ease;
+}
+
+button.check-btn {
+    margin-left: auto;
+}
+
+.check-btn:hover {
+    background-color: #00c552;
+    color: #fff;
+}
+
+.x-btn:hover {
+    background-color: #ef0000;
+    color: #fff;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotatez(35deg);
+    opacity: 0;
+}
+
+.fa-check,
+.fa-xmark {
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    span {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 638px) {
+
+    .check-btn,
+    .x-btn {
+        font-size: 1.7rem;
+        padding: 0.3rem;
+        margin: 1rem;
+    }
+
+    .todo-list {
+        font-size: 30px;
+    }
+
+    .inp,
+    .add-btn {
+        background-color: #fff;
+        border: none;
+        padding: 0.4rem;
+        font-size: 1.5rem;
+    }
+
+}
